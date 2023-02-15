@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="92px" preserveAspectRatio="none" style="width:399px;height:92px;" version="1.1" viewBox="0 0 399 92" width="399px" zoomAndPan="magnify"><defs><filter height="300%" id="fpa9bjzmsmi7w" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[ebc72a62ea4fdfc18636f89ee8a2ca01]
+entity Sales Clerk --><ellipse cx="44" cy="14" fill="#FEFECE" filter="url(#fpa9bjzmsmi7w)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><path d="M44,22 L44,49 M31,30 L57,30 M44,49 L31,64 M44,49 L57,64 " fill="none" filter="url(#fpa9bjzmsmi7w)" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72" x="6" y="84.0332">Sales Clerk</text><ellipse cx="264.8762" cy="45.9752" fill="#FEFECE" filter="url(#fpa9bjzmsmi7w)" rx="122.8762" ry="26.9752" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="211" x="159.3762" y="49.7038">UC 1001 - Specify a new product.</text><!--MD5=[359148f3c171655af5eaf9e5b94bb55b]
+link Sales Clerk  to UC 1001--><path d="M82.15,46 C97.68,46 116.71,46 136.56,46 " fill="none" id="Sales Clerk -to-UC 1001" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="141.62,46,132.62,42,136.62,46,132.62,50,141.62,46" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[fe044c9e5c446a3b5dc584434f6155bf]
+@startuml
+left to right direction
+
+:Sales Clerk : - -> (UC 1001)
+"UC 1001 - Specify a new product." as (UC 1001)
+@enduml
+
+PlantUML version 1.2021.5(Sun Apr 25 12:20:28 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

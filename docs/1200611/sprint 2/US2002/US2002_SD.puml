@@ -1,0 +1,33 @@
+@startuml
+autonumber
+
+title  UC - Update AGV
+
+actor "Warehouse Employee" as US
+
+    MainMenu-->WarehouseUI:create()
+
+        WarehouseUI-->WarehouseController:create()
+
+    MainMenu->WarehouseUI:updateAGV()
+
+activate WarehouseUI
+
+WarehouseUI-->WarehouseUI:showAGVDOCKS
+US->WarehouseUI:choose AGVDOCK
+US->WarehouseUI:introduce data
+
+        WarehouseUI->WarehouseController: updateAGV(description,model,max_weigth,volume,base_location)
+            WarehouseController-->AGV:updateAGV=update(description,model,max_weigth,volume,base_location)
+            WarehouseController->AVGController:
+            AVGController->AVGRepositorio:update(AGV)
+
+        WarehouseController-->WarehouseUI
+        WarehouseUI->WarehouseUI:showAGVDOCKS()
+
+WarehouseUI-->US:info :Warehouse
+    WarehouseUI-->MainMenu
+
+deactivate WarehouseUI
+
+@enduml

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="116px" preserveAspectRatio="none" style="width:624px;height:116px;background:#FFFFFF;" version="1.1" viewBox="0 0 624 116" width="624px" zoomAndPan="magnify"><defs><filter height="300%" id="f9qza2vbdtlxn" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[ebc72a62ea4fdfc18636f89ee8a2ca01]
+entity Sales Clerk --><ellipse cx="44" cy="23.5" fill="#FEFECE" filter="url(#f9qza2vbdtlxn)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><path d="M44,31.5 L44,58.5 M31,39.5 L57,39.5 M44,58.5 L31,73.5 M44,58.5 L57,73.5 " fill="none" filter="url(#f9qza2vbdtlxn)" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72" x="6" y="93.5332">Sales Clerk</text><ellipse cx="377.2112" cy="55.4422" fill="#FEFECE" filter="url(#f9qza2vbdtlxn)" rx="235.2112" ry="49.4422" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="444" x="155.2112" y="59.1708">UC 1004 - Create a new products order on behalf of a given customer.</text><!--MD5=[8d0829ee16534b74878bff1d6c8735a0]
+link Sales Clerk  to UC 1004--><path d="M82.01,55.5 C97.16,55.5 116.03,55.5 136.87,55.5 " fill="none" id="Sales Clerk -to-UC 1004" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="141.92,55.5,132.92,51.5,136.92,55.5,132.92,59.5,141.92,55.5" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[5672ebc6d097fa1decb4c6cca7036b6c]
+@startuml
+left to right direction
+
+:Sales Clerk : - -> (UC 1004)
+"UC 1004 - Create a new products order on behalf of a given customer." as (UC 1004)
+@enduml
+
+PlantUML version 1.2022.1(Tue Feb 01 18:19:58 GMT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: GB
+--></g></svg>

@@ -1,0 +1,6 @@
+@startuml
+left to right direction
+
+:Warehouse Employee : --> (UCConfigureAVG)
+"UCUpdateAVG - Acede ao sistema para configurar \n  os AVGS no Warehouse iniciando-se o processo de “Configure AVGS”." as (UCConfigureAVGS)
+@enduml

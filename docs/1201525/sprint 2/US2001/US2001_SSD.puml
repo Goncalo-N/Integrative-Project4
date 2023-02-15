@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+actor WarehouseEmployee
+participant System
+activate System
+
+WarehouseEmployee -> System: asks to setup a new warehouse plant by uploading a JSON File
+activate System
+
+System --> WarehouseEmployee: asks to type the JSON File name
+deactivate System
+
+WarehouseEmployee -> System: types the asked information
+activate System
+
+System --> WarehouseEmployee: checks the data typed and gets warehouse plant in memory
+deactivate System
+@enduml

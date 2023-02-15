@@ -1,0 +1,35 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class RegisterProductOrderUI {
++doShow()
+}
+
+class RegisterProductOrderController {
++registerNewProductOrder(...)
+}
+
+class ListCustomer {
++listAllCustomers(...)
++getCustomerByID(...)
+}
+
+class ListProduct {
++listAllProducts(...)
++getProductByID(...)
+}
+
+class ProductOrderRepository {
++save(newProductOrder)
+}
+
+class ProductOrder {
++ProductOrder(....)
+}
+
+RegisterProductOrderUI ..> RegisterProductOrderController
+RegisterProductOrderUI ..> ListCustomer
+RegisterProductOrderUI ..> ListProduct
+RegisterProductOrderController ..> ProductOrderRepository
+RegisterProductOrderController ..> ProductOrder
+@enduml

@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class RegisterCustomerUI {
++doShow()
+}
+
+class RegisterCustomerController {
++registerNewCustomer(first_name, last_name, etc...)
+}
+
+class CustomerRepository {
++save(newCustomer) :
+}
+
+class Customer {
++Customer(first_name, last_name, etc...)
+}
+
+RegisterCustomerUI ..> RegisterCustomerController
+RegisterCustomerController ..> CustomerRepository
+RegisterCustomerController ..> Customer
+@enduml

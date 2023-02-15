@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class CreateQuestionnaireUI {
++doShow()
+}
+
+class CreateQuestionnaireController {
++registerQuestionnaire(id, title, etc...)
+}
+
+class QuestionnaireRepository {
++save(newQuestionnaire) :
+}
+
+class Questionnaire {
++Questionnaire(id, title, etc...)
+}
+
+CreateQuestionnaireUI ..> CreateQuestionnaireController
+CreateQuestionnaireController ..> QuestionnaireRepository
+CreateQuestionnaireController ..> Questionnaire
+@enduml

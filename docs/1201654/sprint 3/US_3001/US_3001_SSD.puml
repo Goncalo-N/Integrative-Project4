@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+actor SalesManager
+participant System
+activate System
+
+SalesManager -> System: asks to create a new questionnaire
+activate System
+
+System --> SalesManager: asks to type the necessary data
+deactivate System
+
+SalesManager -> System: types the data
+activate System
+
+System --> SalesManager: checks the data typed and sends it to the database
+deactivate System
+@enduml

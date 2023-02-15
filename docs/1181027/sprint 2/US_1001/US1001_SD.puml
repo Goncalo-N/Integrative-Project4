@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+actor SalesClerk
+
+SalesClerk -> RegisterProductUI : asks to register a new product
+
+activate RegisterProductUI
+RegisterProductUI -> SalesClerk : asks to type the necessary data(internal code, production code, etc...)
+
+SalesClerk -> RegisterProductUI : types the requested data
+
+control RegisterProductController
+RegisterProductUI -> RegisterProductController : create()
+
+activate RegisterProductController
+RegisterProductUI -> RegisterProductController : registerNewProduct(internal code, production code, etc...)
+
+RegisterProductController -> PersistenceContext : repositories()
+
+database RepositoryFactory #lightblue
+PersistenceContext -> RepositoryFactory : create()
+
+database ProductRepository #lightblue
+RepositoryFactory -> ProductRepository : create()
+
+RegisterProductController -> Product : newProduct = new Product(internal code, production code, etc...)
+
+RegisterProductController -> ProductRepository : save(newProduct)
+deactivate RegisterProductController
+@enduml

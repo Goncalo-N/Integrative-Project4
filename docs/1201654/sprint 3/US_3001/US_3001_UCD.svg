@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="92px" preserveAspectRatio="none" style="width:455px;height:92px;background:#FFFFFF;" version="1.1" viewBox="0 0 455 92" width="455px" zoomAndPan="magnify"><defs><filter height="300%" id="f1pj2rbbh0sped" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[3b3a1645be949963f26a51f5932e7174]
+entity Sales Manager --><ellipse cx="55.5" cy="14" fill="#FEFECE" filter="url(#f1pj2rbbh0sped)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><path d="M55.5,22 L55.5,49 M42.5,30 L68.5,30 M55.5,49 L42.5,64 M55.5,49 L68.5,64 " fill="none" filter="url(#f1pj2rbbh0sped)" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95" x="6" y="84.0332">Sales Manager</text><ellipse cx="304.305" cy="45.761" fill="#FEFECE" filter="url(#f1pj2rbbh0sped)" rx="139.305" ry="30.261" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="246" x="181.305" y="49.4895">UC 3001 - Create a new questionnaire.</text><!--MD5=[19e92aec871c8005f94112853ef25953]
+link Sales Manager  to UC 3001--><path d="M105,46 C121.19,46 140.15,46 159.81,46 " fill="none" id="Sales Manager -to-UC 3001" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="164.82,46,155.82,42,159.82,46,155.82,50,164.82,46" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[54b53738b4e9a74b64f20b6ca47b5eb9]
+@startuml
+left to right direction
+
+:Sales Manager : - -> (UC 3001)
+"UC 3001 - Create a new questionnaire." as (UC 3001)
+@enduml
+
+PlantUML version 1.2022.1(Tue Feb 01 18:19:58 GMT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: GB
+--></g></svg>

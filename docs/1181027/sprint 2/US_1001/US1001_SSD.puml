@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+actor SalesClerk
+participant System
+activate System
+
+SalesClerk -> System: asks to specify a new product
+activate System
+
+System --> SalesClerk: asks to type the necessary data
+deactivate System
+
+SalesClerk -> System: types the data
+activate System
+
+System --> SalesClerk: checks the data typed and sends it to the database
+deactivate System
+@enduml

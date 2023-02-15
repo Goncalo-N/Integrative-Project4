@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="498px" preserveAspectRatio="none" style="width:1375px;height:498px;background:#FFFFFF;" version="1.1" viewBox="0 0 1375 498" width="1375px" zoomAndPan="magnify"><defs><filter height="300%" id="f1ntvs8659w0s1" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f1ntvs8659w0s1)" height="282.1641" style="stroke:#A80036;stroke-width:1.0;" width="10" x="421" y="121.9609"/><rect fill="#FFFFFF" filter="url(#f1ntvs8659w0s1)" height="182.1094" style="stroke:#A80036;stroke-width:1.0;" width="10" x="753" y="213.0156"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="42" x2="42" y1="89.6094" y2="413.125"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="426" x2="426" y1="89.6094" y2="413.125"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="758" x2="758" y1="89.6094" y2="413.125"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="929" x2="929" y1="89.6094" y2="413.125"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1070" x2="1070" y1="89.6094" y2="413.125"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1208" x2="1208" y1="89.6094" y2="413.125"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1325" x2="1325" y1="89.6094" y2="413.125"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="5" y="86.5332">SalesClerk</text><ellipse cx="42" cy="15" fill="#FEFECE" filter="url(#f1ntvs8659w0s1)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M42,23 L42,50 M29,31 L55,31 M42,50 L29,65 M42,50 L55,65 " fill="none" filter="url(#f1ntvs8659w0s1)" style="stroke:#A80036;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="5" y="426.6582">SalesClerk</text><ellipse cx="42" cy="439.7344" fill="#FEFECE" filter="url(#f1ntvs8659w0s1)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M42,447.7344 L42,474.7344 M29,455.7344 L55,455.7344 M42,474.7344 L29,489.7344 M42,474.7344 L55,489.7344 " fill="none" filter="url(#f1ntvs8659w0s1)" style="stroke:#A80036;stroke-width:2.0;"/><rect fill="#FEFECE" filter="url(#f1ntvs8659w0s1)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="140" x="354" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="361" y="74.5332">RegisterCustomerUI</text><rect fill="#FEFECE" filter="url(#f1ntvs8659w0s1)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="140" x="354" y="412.125"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="361" y="433.6582">RegisterCustomerUI</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="176" x="667" y="86.5332">RegisterCustomerController</text><ellipse cx="758" cy="56" fill="#FEFECE" filter="url(#f1ntvs8659w0s1)" rx="12" ry="12" style="stroke:#A80036;stroke-width:2.0;"/><polygon fill="#A80036" points="754,44,760,39,758,44,760,49,754,44" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="176" x="667" y="426.6582">RegisterCustomerController</text><ellipse cx="758" cy="445.7344" fill="#FEFECE" filter="url(#f1ntvs8659w0s1)" rx="12" ry="12" style="stroke:#A80036;stroke-width:2.0;"/><polygon fill="#A80036" points="754,433.7344,760,428.7344,758,433.7344,760,438.7344,754,433.7344" style="stroke:#A80036;stroke-width:1.0;"/><rect fill="#FEFECE" filter="url(#f1ntvs8659w0s1)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="136" x="859" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="866" y="74.5332">PersistenceContext</text><rect fill="#FEFECE" filter="url(#f1ntvs8659w0s1)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="136" x="859" y="412.125"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="866" y="433.6582">PersistenceContext</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="1009" y="86.5332">RepositoryFactory</text><path d="M1052,36 C1052,26 1070,26 1070,26 C1070,26 1088,26 1088,36 L1088,62 C1088,72 1070,72 1070,72 C1070,72 1052,72 1052,62 L1052,36 " fill="#ADD8E6" filter="url(#f1ntvs8659w0s1)" style="stroke:#000000;stroke-width:1.5;"/><path d="M1052,36 C1052,46 1070,46 1070,46 C1070,46 1088,46 1088,36 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="1009" y="426.6582">RepositoryFactory</text><path d="M1052,439.7344 C1052,429.7344 1070,429.7344 1070,429.7344 C1070,429.7344 1088,429.7344 1088,439.7344 L1088,465.7344 C1088,475.7344 1070,475.7344 1070,475.7344 C1070,475.7344 1052,475.7344 1052,465.7344 L1052,439.7344 " fill="#ADD8E6" filter="url(#f1ntvs8659w0s1)" style="stroke:#000000;stroke-width:1.5;"/><path d="M1052,439.7344 C1052,449.7344 1070,449.7344 1070,449.7344 C1070,449.7344 1088,449.7344 1088,439.7344 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="1141" y="86.5332">CustomerRepository</text><path d="M1190.5,36 C1190.5,26 1208.5,26 1208.5,26 C1208.5,26 1226.5,26 1226.5,36 L1226.5,62 C1226.5,72 1208.5,72 1208.5,72 C1208.5,72 1190.5,72 1190.5,62 L1190.5,36 " fill="#ADD8E6" filter="url(#f1ntvs8659w0s1)" style="stroke:#000000;stroke-width:1.5;"/><path d="M1190.5,36 C1190.5,46 1208.5,46 1208.5,46 C1208.5,46 1226.5,46 1226.5,36 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="1141" y="426.6582">CustomerRepository</text><path d="M1190.5,439.7344 C1190.5,429.7344 1208.5,429.7344 1208.5,429.7344 C1208.5,429.7344 1226.5,429.7344 1226.5,439.7344 L1226.5,465.7344 C1226.5,475.7344 1208.5,475.7344 1208.5,475.7344 C1208.5,475.7344 1190.5,475.7344 1190.5,465.7344 L1190.5,439.7344 " fill="#ADD8E6" filter="url(#f1ntvs8659w0s1)" style="stroke:#000000;stroke-width:1.5;"/><path d="M1190.5,439.7344 C1190.5,449.7344 1208.5,449.7344 1208.5,449.7344 C1208.5,449.7344 1226.5,449.7344 1226.5,439.7344 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><rect fill="#FEFECE" filter="url(#f1ntvs8659w0s1)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="75" x="1286" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="1293" y="74.5332">Customer</text><rect fill="#FEFECE" filter="url(#f1ntvs8659w0s1)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="75" x="1286" y="412.125"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="1293" y="433.6582">Customer</text><rect fill="#FFFFFF" filter="url(#f1ntvs8659w0s1)" height="282.1641" style="stroke:#A80036;stroke-width:1.0;" width="10" x="421" y="121.9609"/><rect fill="#FFFFFF" filter="url(#f1ntvs8659w0s1)" height="182.1094" style="stroke:#A80036;stroke-width:1.0;" width="10" x="753" y="213.0156"/><polygon fill="#A80036" points="409,117.9609,419,121.9609,409,125.9609,413,121.9609" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="42" x2="415" y1="121.9609" y2="121.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="186" x="49" y="117.1045">asks to register a new customer</text><polygon fill="#A80036" points="53,148.3125,43,152.3125,53,156.3125,49,152.3125" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="47" x2="420" y1="152.3125" y2="152.3125"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="355" x="59" y="147.4561">asks to type the necessary data(first name, last name, etc...)</text><polygon fill="#A80036" points="409,178.6641,419,182.6641,409,186.6641,413,182.6641" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="42" x2="415" y1="182.6641" y2="182.6641"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="49" y="177.8076">types the requested data</text><polygon fill="#A80036" points="741,209.0156,751,213.0156,741,217.0156,745,213.0156" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="431" x2="747" y1="213.0156" y2="213.0156"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="44" x="438" y="208.1592">create()</text><polygon fill="#A80036" points="741,239.3672,751,243.3672,741,247.3672,745,243.3672" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="431" x2="747" y1="243.3672" y2="243.3672"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="298" x="438" y="238.5107">registerNewCustomer(first_name, last_name, etc...)</text><polygon fill="#A80036" points="917,269.7188,927,273.7188,917,277.7188,921,273.7188" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="763" x2="923" y1="273.7188" y2="273.7188"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="75" x="770" y="268.8623">repositories()</text><polygon fill="#A80036" points="1058,300.0703,1068,304.0703,1058,308.0703,1062,304.0703" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="929" x2="1064" y1="304.0703" y2="304.0703"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="44" x="936" y="299.2139">create()</text><polygon fill="#A80036" points="1196.5,330.4219,1206.5,334.4219,1196.5,338.4219,1200.5,334.4219" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1070" x2="1202.5" y1="334.4219" y2="334.4219"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="44" x="1077" y="329.5654">create()</text><polygon fill="#A80036" points="1313.5,360.7734,1323.5,364.7734,1313.5,368.7734,1317.5,364.7734" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="763" x2="1319.5" y1="364.7734" y2="364.7734"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="352" x="770" y="359.917">newCustomer = new Customer(first_name, last_name, etc...)</text><polygon fill="#A80036" points="1196.5,391.125,1206.5,395.125,1196.5,399.125,1200.5,395.125" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="758" x2="1202.5" y1="395.125" y2="395.125"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="113" x="765" y="390.2686">save(newCustomer)</text><!--MD5=[02a46b55e30e8323f1f3ddf96f0cd6d4]
+@startuml
+'https://plantuml.com/class-diagram
+
+actor SalesClerk
+
+SalesClerk -> RegisterCustomerUI : asks to register a new customer
+
+activate RegisterCustomerUI
+RegisterCustomerUI -> SalesClerk : asks to type the necessary data(first name, last name, etc...)
+
+SalesClerk -> RegisterCustomerUI : types the requested data
+
+control RegisterCustomerController
+RegisterCustomerUI -> RegisterCustomerController : create()
+
+activate RegisterCustomerController
+RegisterCustomerUI -> RegisterCustomerController : registerNewCustomer(first_name, last_name, etc...)
+
+RegisterCustomerController -> PersistenceContext : repositories()
+
+database RepositoryFactory #lightblue
+PersistenceContext -> RepositoryFactory : create()
+
+database CustomerRepository #lightblue
+RepositoryFactory -> CustomerRepository : create()
+
+RegisterCustomerController -> Customer : newCustomer = new Customer(first_name, last_name, etc...)
+
+RegisterCustomerController -> CustomerRepository : save(newCustomer)
+deactivate RegisterCustomerController
+@enduml
+
+@startuml
+
+actor SalesClerk
+
+SalesClerk -> RegisterCustomerUI : asks to register a new customer
+
+activate RegisterCustomerUI
+RegisterCustomerUI -> SalesClerk : asks to type the necessary data(first name, last name, etc...)
+
+SalesClerk -> RegisterCustomerUI : types the requested data
+
+control RegisterCustomerController
+RegisterCustomerUI -> RegisterCustomerController : create()
+
+activate RegisterCustomerController
+RegisterCustomerUI -> RegisterCustomerController : registerNewCustomer(first_name, last_name, etc...)
+
+RegisterCustomerController -> PersistenceContext : repositories()
+
+database RepositoryFactory #lightblue
+PersistenceContext -> RepositoryFactory : create()
+
+database CustomerRepository #lightblue
+RepositoryFactory -> CustomerRepository : create()
+
+RegisterCustomerController -> Customer : newCustomer = new Customer(first_name, last_name, etc...)
+
+RegisterCustomerController -> CustomerRepository : save(newCustomer)
+deactivate RegisterCustomerController
+@enduml
+
+PlantUML version 1.2022.1(Tue Feb 01 18:19:58 GMT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: GB
+--></g></svg>

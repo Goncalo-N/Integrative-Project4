@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="326px" preserveAspectRatio="none" style="width:386px;height:326px;background:#FFFFFF;" version="1.1" viewBox="0 0 386 326" width="386px" zoomAndPan="magnify"><defs><filter height="300%" id="f1x3vc0mj5do9z" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[9266e35cee0717ce828cd1f5534d0f75]
+class CreateQuestionnaireUI--><rect codeLine="3" fill="#FEFECE" filter="url(#f1x3vc0mj5do9z)" height="61.8359" id="CreateQuestionnaireUI" style="stroke:#A80036;stroke-width:1.5;" width="159" x="112" y="7"/><ellipse cx="127" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M129,19.5 Q129.2031,19 129.4375,18.75 Q129.6719,18.5 129.9375,18.5 Q130.4063,18.5 130.7031,18.7813 Q131,19.0625 131,19.7188 L131,21.2813 Q131,21.9375 130.7188,22.2188 Q130.4375,22.5 130,22.5 Q129.6094,22.5 129.3594,22.3281 Q129.1094,22.1563 129,21.7031 Q128.9531,21.3906 128.7813,21.2188 Q128.4688,20.8906 127.9063,20.7031 Q127.3438,20.5 126.7813,20.5 Q126.0781,20.5 125.4844,20.7813 Q124.9063,21.0625 124.4531,21.6875 Q124,22.3125 124,23.1719 L124,24.0938 Q124,25.125 124.8438,25.8125 Q125.6875,26.5 127.1875,26.5 Q128.0781,26.5 128.7031,26.2969 Q129.0625,26.1875 129.4688,25.8281 Q129.7344,25.625 129.875,25.5625 Q130.0156,25.5 130.1875,25.5 Q130.5156,25.5 130.75,25.7656 Q131,26.0156 131,26.375 Q131,26.7188 130.6563,27.125 Q130.1563,27.7188 129.3594,28.0469 Q128.3125,28.5 127.0313,28.5 Q125.5313,28.5 124.3281,27.9063 Q123.3594,27.4375 122.6719,26.4219 Q122,25.4063 122,24.2031 L122,23.1094 Q122,21.8594 122.5938,20.7656 Q123.2031,19.6719 124.25,19.0938 Q125.3125,18.5 126.5,18.5 Q127.2188,18.5 127.8438,18.75 Q128.4688,19 129,19.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="127" x="141" y="27.9102">CreateQuestionnaireUI</text><line style="stroke:#A80036;stroke-width:1.5;" x1="113" x2="270" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="113" x2="270" y1="47" y2="47"/><ellipse cx="123" cy="58" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="49" x="132" y="62.4189">doShow()</text><!--MD5=[7d76f64e10b37a265a451fe552a87eeb]
+class CreateQuestionnaireController--><rect codeLine="7" fill="#FEFECE" filter="url(#f1x3vc0mj5do9z)" height="61.8359" id="CreateQuestionnaireController" style="stroke:#A80036;stroke-width:1.5;" width="201" x="91" y="129"/><ellipse cx="106" cy="145" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M108,141.5 Q108.2031,141 108.4375,140.75 Q108.6719,140.5 108.9375,140.5 Q109.4063,140.5 109.7031,140.7813 Q110,141.0625 110,141.7188 L110,143.2813 Q110,143.9375 109.7188,144.2188 Q109.4375,144.5 109,144.5 Q108.6094,144.5 108.3594,144.3281 Q108.1094,144.1563 108,143.7031 Q107.9531,143.3906 107.7813,143.2188 Q107.4688,142.8906 106.9063,142.7031 Q106.3438,142.5 105.7813,142.5 Q105.0781,142.5 104.4844,142.7813 Q103.9063,143.0625 103.4531,143.6875 Q103,144.3125 103,145.1719 L103,146.0938 Q103,147.125 103.8438,147.8125 Q104.6875,148.5 106.1875,148.5 Q107.0781,148.5 107.7031,148.2969 Q108.0625,148.1875 108.4688,147.8281 Q108.7344,147.625 108.875,147.5625 Q109.0156,147.5 109.1875,147.5 Q109.5156,147.5 109.75,147.7656 Q110,148.0156 110,148.375 Q110,148.7188 109.6563,149.125 Q109.1563,149.7188 108.3594,150.0469 Q107.3125,150.5 106.0313,150.5 Q104.5313,150.5 103.3281,149.9063 Q102.3594,149.4375 101.6719,148.4219 Q101,147.4063 101,146.2031 L101,145.1094 Q101,143.8594 101.5938,142.7656 Q102.2031,141.6719 103.25,141.0938 Q104.3125,140.5 105.5,140.5 Q106.2188,140.5 106.8438,140.75 Q107.4688,141 108,141.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="169" x="120" y="149.9102">CreateQuestionnaireController</text><line style="stroke:#A80036;stroke-width:1.5;" x1="92" x2="291" y1="161" y2="161"/><line style="stroke:#A80036;stroke-width:1.5;" x1="92" x2="291" y1="169" y2="169"/><ellipse cx="102" cy="180" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="172" x="111" y="184.4189">registerQuestionnaire(id, title, etc...)</text><!--MD5=[d578e102c11cfec3147d3966fcb10303]
+class QuestionnaireRepository--><rect codeLine="11" fill="#FEFECE" filter="url(#f1x3vc0mj5do9z)" height="61.8359" id="QuestionnaireRepository" style="stroke:#A80036;stroke-width:1.5;" width="169" x="7" y="251"/><ellipse cx="22" cy="267" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M24,263.5 Q24.2031,263 24.4375,262.75 Q24.6719,262.5 24.9375,262.5 Q25.4063,262.5 25.7031,262.7813 Q26,263.0625 26,263.7188 L26,265.2813 Q26,265.9375 25.7188,266.2188 Q25.4375,266.5 25,266.5 Q24.6094,266.5 24.3594,266.3281 Q24.1094,266.1563 24,265.7031 Q23.9531,265.3906 23.7813,265.2188 Q23.4688,264.8906 22.9063,264.7031 Q22.3438,264.5 21.7813,264.5 Q21.0781,264.5 20.4844,264.7813 Q19.9063,265.0625 19.4531,265.6875 Q19,266.3125 19,267.1719 L19,268.0938 Q19,269.125 19.8438,269.8125 Q20.6875,270.5 22.1875,270.5 Q23.0781,270.5 23.7031,270.2969 Q24.0625,270.1875 24.4688,269.8281 Q24.7344,269.625 24.875,269.5625 Q25.0156,269.5 25.1875,269.5 Q25.5156,269.5 25.75,269.7656 Q26,270.0156 26,270.375 Q26,270.7188 25.6563,271.125 Q25.1563,271.7188 24.3594,272.0469 Q23.3125,272.5 22.0313,272.5 Q20.5313,272.5 19.3281,271.9063 Q18.3594,271.4375 17.6719,270.4219 Q17,269.4063 17,268.2031 L17,267.1094 Q17,265.8594 17.5938,264.7656 Q18.2031,263.6719 19.25,263.0938 Q20.3125,262.5 21.5,262.5 Q22.2188,262.5 22.8438,262.75 Q23.4688,263 24,263.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="137" x="36" y="271.9102">QuestionnaireRepository</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="175" y1="283" y2="283"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="175" y1="291" y2="291"/><ellipse cx="18" cy="302" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="127" x="27" y="306.4189">save(newQuestionnaire) :</text><!--MD5=[5a3b85c54cc1c79904e0b827443986bf]
+class Questionnaire--><rect codeLine="15" fill="#FEFECE" filter="url(#f1x3vc0mj5do9z)" height="61.8359" id="Questionnaire" style="stroke:#A80036;stroke-width:1.5;" width="161" x="211" y="251"/><ellipse cx="248.95" cy="267" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M250.95,263.5 Q251.1531,263 251.3875,262.75 Q251.6219,262.5 251.8875,262.5 Q252.3563,262.5 252.6531,262.7813 Q252.95,263.0625 252.95,263.7188 L252.95,265.2813 Q252.95,265.9375 252.6688,266.2188 Q252.3875,266.5 251.95,266.5 Q251.5594,266.5 251.3094,266.3281 Q251.0594,266.1563 250.95,265.7031 Q250.9031,265.3906 250.7313,265.2188 Q250.4188,264.8906 249.8563,264.7031 Q249.2938,264.5 248.7313,264.5 Q248.0281,264.5 247.4344,264.7813 Q246.8563,265.0625 246.4031,265.6875 Q245.95,266.3125 245.95,267.1719 L245.95,268.0938 Q245.95,269.125 246.7938,269.8125 Q247.6375,270.5 249.1375,270.5 Q250.0281,270.5 250.6531,270.2969 Q251.0125,270.1875 251.4188,269.8281 Q251.6844,269.625 251.825,269.5625 Q251.9656,269.5 252.1375,269.5 Q252.4656,269.5 252.7,269.7656 Q252.95,270.0156 252.95,270.375 Q252.95,270.7188 252.6063,271.125 Q252.1063,271.7188 251.3094,272.0469 Q250.2625,272.5 248.9813,272.5 Q247.4813,272.5 246.2781,271.9063 Q245.3094,271.4375 244.6219,270.4219 Q243.95,269.4063 243.95,268.2031 L243.95,267.1094 Q243.95,265.8594 244.5438,264.7656 Q245.1531,263.6719 246.2,263.0938 Q247.2625,262.5 248.45,262.5 Q249.1688,262.5 249.7938,262.75 Q250.4188,263 250.95,263.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="78" x="268.05" y="271.9102">Questionnaire</text><line style="stroke:#A80036;stroke-width:1.5;" x1="212" x2="371" y1="283" y2="283"/><line style="stroke:#A80036;stroke-width:1.5;" x1="212" x2="371" y1="291" y2="291"/><ellipse cx="222" cy="302" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="231" y="306.4189">Questionnaire(id, title, etc...)</text><!--MD5=[716966af53a3dd2b04e2a70f9ec2bcd2]
+link CreateQuestionnaireUI to CreateQuestionnaireController--><path codeLine="19" d="M191.5,69.28 C191.5,85.77 191.5,106.26 191.5,123.49 " fill="none" id="CreateQuestionnaireUI-to-CreateQuestionnaireController" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="191.5,128.73,195.5,119.73,191.5,123.73,187.5,119.73,191.5,128.73" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[5baa1c5b5caafc7b9bc07282da37d428]
+link CreateQuestionnaireController to QuestionnaireRepository--><path codeLine="20" d="M166.27,191.28 C152.17,208.19 134.57,229.32 119.98,246.82 " fill="none" id="CreateQuestionnaireController-to-QuestionnaireRepository" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="116.73,250.73,125.563,246.3735,119.9295,246.8877,119.4153,241.2543,116.73,250.73" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[aa615d380a3d148dc5fae55fa9344305]
+link CreateQuestionnaireController to Questionnaire--><path codeLine="21" d="M216.73,191.28 C230.83,208.19 248.43,229.32 263.02,246.82 " fill="none" id="CreateQuestionnaireController-to-Questionnaire" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="266.27,250.73,263.5847,241.2543,263.0705,246.8877,257.437,246.3735,266.27,250.73" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[55d9ad9663374d9ac7db767ac76f4c23]
+@startuml
+'https://plantuml.com/class-diagram
+
+class CreateQuestionnaireUI {
++doShow()
+}
+
+class CreateQuestionnaireController {
++registerQuestionnaire(id, title, etc...)
+}
+
+class QuestionnaireRepository {
++save(newQuestionnaire) :
+}
+
+class Questionnaire {
++Questionnaire(id, title, etc...)
+}
+
+CreateQuestionnaireUI ..> CreateQuestionnaireController
+CreateQuestionnaireController ..> QuestionnaireRepository
+CreateQuestionnaireController ..> Questionnaire
+@enduml
+
+@startuml
+
+class CreateQuestionnaireUI {
++doShow()
+}
+
+class CreateQuestionnaireController {
++registerQuestionnaire(id, title, etc...)
+}
+
+class QuestionnaireRepository {
++save(newQuestionnaire) :
+}
+
+class Questionnaire {
++Questionnaire(id, title, etc...)
+}
+
+CreateQuestionnaireUI ..> CreateQuestionnaireController
+CreateQuestionnaireController ..> QuestionnaireRepository
+CreateQuestionnaireController ..> Questionnaire
+@enduml
+
+PlantUML version 1.2022.1(Tue Feb 01 18:19:58 GMT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: GB
+--></g></svg>

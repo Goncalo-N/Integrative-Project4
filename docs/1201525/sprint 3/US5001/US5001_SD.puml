@@ -1,0 +1,28 @@
+@startuml
+participant AGV_Manager <<client>>
+
+loop true
+Activate AGV_DigitalTwin
+AGV_DigitalTwin -> AGV_DigitalTwin: accept
+
+AGV_Manager --> AGV_DigitalTwin: request
+
+participant HandleClient <<thread>>
+activate HandleClient
+AGV_DigitalTwin -\ HandleClient: start
+deactivate AGV_DigitalTwin
+end
+
+HandleClient -> MessageParser:parse(request)
+create MessageProtocolRequest <<abstract>>
+MessageParser -> MessageProtocolRequest:new
+
+HandleClient -> MessageProtocolRequest: execute
+activate MessageProtocolRequest
+MessageProtocolRequest -> MessageRequest:buildResponse
+MessageProtocolRequest --> HandleClient: response
+deactivate MessageProtocolRequest
+
+HandleClient --> AGV_Manager: response
+deactivate HandleClient
+@enduml

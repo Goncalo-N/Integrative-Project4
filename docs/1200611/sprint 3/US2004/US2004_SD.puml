@@ -1,0 +1,38 @@
+@startuml
+autonumber
+
+title UC - Acess List of orders and Update them
+
+actor "Warehouse Employee" as US
+
+MainMenu--> WarehouseUI:create()
+    WarehouseUI-->WarehouseController:create()
+MainMenu->WarehouseUI:getListOfReadyOrders()
+
+activate WarehouseUI
+
+WarehouseUI--> WarehouseController:getListOfReadyOrders()
+activate WarehouseController
+WarehouseController-->ProductOrdersRepository:create()
+WarehouseController-->ProductOrdersRepository:getListOfReadyOrders()
+activate ProductOrdersRepository
+ProductOrdersRepository-->WarehouseController:returns ListOfReadyOrders
+deactivate ProductOrdersRepository
+WarehouseController-->WarehouseUI:List of Ready Orders
+WarehouseUI-->US:asks Id of product order to update
+US-->WarehouseUI:imput id
+WarehouseUI-->WarehouseController:updateProductOrder(id)
+WarehouseController-->ProductOrdersRepository:getProductOrder(id)
+activate ProductOrdersRepository
+ProductOrdersRepository-->WarehouseController:return ProductOrder
+deactivate ProductOrdersRepository
+WarehouseController-->WarehouseUI:ask for updated data
+WarehouseUI-->US: asks for updated data
+US-->WarehouseUI:inserts data
+WarehouseUI-->WarehouseController:saveProductOrder()
+WarehouseController-->ProductOrdersRepository:saveProductOrder()
+activate ProductOrdersRepository
+deactivate WarehouseController
+deactivate ProductOrdersRepository
+deactivate WarehouseUI
+@enduml

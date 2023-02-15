@@ -1,0 +1,67 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+actor SalesClerk
+
+SalesClerk -> RegisterProductOrderUI : asks to create a new product order
+
+activate RegisterProductOrderUI
+RegisterProductOrderUI -> SalesClerk : asks if wants to type or select the Customer ID
+
+SalesClerk -> RegisterProductOrderUI : types the requested data
+
+control ListCustomer
+RegisterProductOrderUI -> ListCustomer : Iterable<Customer> listaCustomers = listAllCustomers()
+activate ListCustomer
+deactivate ListCustomer
+
+RegisterProductOrderUI -> SalesClerk : asks to type/select the Customer ID
+
+SalesClerk -> RegisterProductOrderUI : types/selects the Customer ID
+
+loop
+RegisterProductOrderUI -> SalesClerk : asks if wants to type or select the Product ID
+
+SalesClerk -> RegisterProductOrderUI : types the requested data
+
+control ListProduct
+RegisterProductOrderUI -> ListProduct : Iterable<Product> listaProducts = listAllProducts()
+activate ListProduct
+deactivate ListProduct
+
+RegisterProductOrderUI -> SalesClerk : asks to type/select the Product ID
+
+SalesClerk -> RegisterProductOrderUI : types/selects the Product ID
+
+RegisterProductOrderUI -> SalesClerk : asks to type the Products´s quantity
+
+SalesClerk -> RegisterProductOrderUI : types the Products´s quantity
+end
+
+RegisterProductOrderUI -> SalesClerk : asks to select the shipment method
+
+SalesClerk -> RegisterProductOrderUI : selects the shipment method
+
+RegisterProductOrderUI -> SalesClerk : asks to select the payment method
+
+SalesClerk -> RegisterProductOrderUI : selects the payment method
+
+control RegisterProductOrderController
+RegisterProductOrderUI -> RegisterProductOrderController : create()
+
+activate RegisterProductOrderController
+RegisterProductOrderUI -> RegisterProductOrderController : registerNewProductOrder(...)
+
+RegisterProductOrderController -> PersistenceContext : repositories()
+
+database RepositoryFactory #lightblue
+PersistenceContext -> RepositoryFactory : create()
+
+database ProductOrderRepository #lightblue
+RepositoryFactory -> ProductOrderRepository : create()
+
+RegisterProductOrderController -> ProductOrder : newProductOrder = new ProductOrder(...)
+
+RegisterProductOrderController -> ProductOrderRepository : save(newProductOrder)
+deactivate RegisterProductOrderController
+@enduml

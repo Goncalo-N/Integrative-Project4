@@ -1,0 +1,6 @@
+@startuml
+left to right direction
+
+:Sales Manager : --> (UC 3001)
+"UC 3001 - Create a new questionnaire." as (UC 3001)
+@enduml

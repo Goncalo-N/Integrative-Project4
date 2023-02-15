@@ -1,0 +1,143 @@
+@startuml Domain Module
+'https://plantuml.com/class-diagram
+
+'skinparam linetype ortho
+'skinparam linetype polyline
+
+package "Customer" <<aggregate>> {
+
+    class "Customer" as customer <<aggregate root>> <<entity>>{
+        String name
+    }
+
+    class "Shopping Cart" as shoppingCart <<value object>>  {
+
+    }
+}
+
+package "Product" <<aggregate>> {
+
+    class "Product" as product <<aggregate root>> <<entity>>{
+        int productID
+        String brandName
+        String reference
+    }
+}
+
+package "Product Category" <<aggregate>> {
+
+    class "ProductCategory" as productCategory <<aggregate root>> <<entity>>{
+        int categoryCode
+        String categoryDescription
+    }
+}
+
+package "Product Order" <<aggregate>> {
+
+    class "ProductOrder" as productOrder <<aggregate root>> <<entity>>{
+        int quantity
+    }
+}
+
+package "Warehouse" <<aggregate>> {
+
+    class "Warehouse" as warehouse <<aggregate root>> <<entity>>{
+        String warehouseDescription
+    }
+
+    class "Aisle" as aisle <<entity>>{
+        int aisleID
+    }
+
+    class "Row" as row <<entity>>{
+        int rowID
+    }
+
+    class "Shelf" as shelf <<entity>>{
+        int shelfID
+    }
+
+    class "Bin" as bin <<entity>>{
+        int binID
+    }
+
+    class "AGVDocks" as agvDocks <<aggregate root>> <<entity>>{
+        int agvDocksID
+    }
+}
+
+package "AGV" <<aggregate>> {
+
+    class "AGV" as agv <<aggregate root>> <<entity>>{
+        int agvID
+    }
+}
+
+
+package "Questionnaire" <<aggregate>> {
+    class "Questionnaire" as questionnaire <<aggregate root>> <<entity>>{
+
+    }
+
+    class "Section" as section <<entity>>{
+
+    }
+
+    class "Question" as question <<entity>>{
+
+    }
+}
+
+package "System User" <<aggregate>> {
+    abstract class  "SystemUser" as sys_user <<aggregate root>> <<entity>>{
+
+    }
+}
+
+package "Answer" <<aggregate>> {
+
+    class "Answer" as answer <<aggregate root>> <<entity>>{
+
+    }
+}
+
+"Product Order" -left[hidden] "Product"
+"Product" -down[hidden]---> "Product Category"
+
+"System User" -down[hidden]-> "Questionnaire"
+
+product "*" -> "1" productCategory
+
+productOrder "1" -> "1...*" product
+
+shoppingCart "1" -> "1...*" product
+
+customer -> "1" shoppingCart
+
+warehouse "1" --> "*" aisle
+warehouse "1" -> "*" agvDocks
+
+aisle "1" --> "*" row
+
+row "1" --> "*" shelf
+
+shelf "1" --> "*" bin
+
+bin "1" ---> "1...*" product
+
+questionnaire "1" --> "1...*" section
+
+section "1" --> "1...*" question
+
+agvDocks "1" -> "*" agv
+
+sys_user -> questionnaire
+sys_user -> warehouse
+sys_user ---> product
+
+answer "1" --> "1...*" questionnaire
+answer "1" --> "1...*" section
+answer "1" --> "1...*" question
+answer "1" --> "1...*" customer
+
+@enduml

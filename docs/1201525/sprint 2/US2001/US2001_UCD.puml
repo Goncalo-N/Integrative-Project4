@@ -1,0 +1,6 @@
+@startuml
+left to right direction
+
+:Warehouse Employee : --> (UC 2001)
+"UC 2001 - Set up a new warehouse plant." as (UC 2001)
+@enduml

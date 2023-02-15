@@ -1,0 +1,33 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+title  UC-Configure AVG
+
+class MainMenu {
+}
+
+class Warehouse {
++warehouse = create(id,length,width,square,unit,aisles,AVGDOCKS)
+}
+
+class WarehouseController {
++create()
++resgistarWarehouse(id,length,width,square,unit,aisles,AVGDOCKS)
+}
+
+class WarehouseUI {
++create()
++resgistarWarehouse()
++showWarehouse()
+}
+
+class WarehouseRepositorio {
++create()
++update(warehouse)
+}
+
+MainMenu ..> WarehouseUI
+WarehouseUI ..> WarehouseController
+WarehouseController ..> Warehouse
+WarehouseController ..> WarehouseRepositorio
+@enduml

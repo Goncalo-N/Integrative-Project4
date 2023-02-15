@@ -1,0 +1,511 @@
+@startuml Domain Module
+'https://plantuml.com/class-diagram
+
+'skinparam linetype ortho
+'skinparam linetype polyline
+
+package "Customer" <<aggregate>> {
+
+    class "Customer" as customer <<aggregate root>> <<entity>>{
+        String name
+    }
+
+    class "Customer ID" as customerID <<value object>>  {
+
+    }
+
+    class "VAT" as vat <<value object>>  {
+
+    }
+
+    class "Email Address" as emailAddress <<value object>>  {
+
+    }
+
+    class "Phone Number" as phoneNumber <<value object>>  {
+
+    }
+
+    class "Birthdate" as birthdate <<value object>>  {
+
+    }
+
+    class "Gender" as gender <<value object>>  {
+
+    }
+
+    class "Billing Addresses" as billingAddresses <<value object>>  {
+
+    }
+
+    class "Delivering Addresses" as deliveringAddresses <<value object>>  {
+
+    }
+
+    class "Shopping Cart" as shoppingCart <<value object>>  {
+
+    }
+}
+
+package "Product" <<aggregate>> {
+
+    class "Product" as product <<aggregate root>> <<entity>>{
+        int productID
+        String brandName
+        String reference
+    }
+
+    class "Photos" as photos <<value object>>  {
+
+    }
+
+    class "Product Short Description" as productShortDescription <<value object>>  {
+
+    }
+
+    class "Product Extended Description" as productExtendedDescription <<value object>>  {
+
+    }
+
+    class "Product Technical Description" as productTechnicalDescription <<value object>>  {
+
+    }
+
+    class "Barcode" as barcode <<value object>>  {
+
+    }
+
+    class "ProductionCode" as productionCode <<value object>>  {
+
+    }
+}
+
+package "Product Category" <<aggregate>> {
+
+    class "ProductCategory" as productCategory <<aggregate root>> <<entity>>{
+        int categoryCode
+        String categoryDescription
+    }
+}
+
+package "Product Order" <<aggregate>> {
+
+    class "ProductOrder" as productOrder <<aggregate root>> <<entity>>{
+        int quantity
+    }
+
+    class "Order ID" as orderID <<value object>>  {
+
+    }
+
+    class "Datetime" as datetime <<value object>>  {
+
+    }
+
+    class "Shipment Method" as shipmentMethod <<value object>>  {
+
+    }
+
+    class "Payment Method" as paymentMethod <<value object>>  {
+
+    }
+
+    class "Status" as status <<value object>>  {
+
+    }
+}
+
+package "Warehouse" <<aggregate>> {
+
+    class "Warehouse" as warehouse <<aggregate root>> <<entity>>{
+        String warehouseDescription
+    }
+
+    class "Warehouse Length" as warehouseLength <<value object>>  {
+
+    }
+
+    class "Warehouse Width" as warehouseWidth <<value object>>  {
+
+    }
+
+    class "Warehouse Square" as warehouseSquare <<value object>>  {
+
+    }
+
+    class "Unit" as unit <<value object>>  {
+
+    }
+
+    class "Aisle" as aisle <<entity>>{
+        int aisleID
+    }
+
+    class "Aisle begin" as aisleBegin <<value object>>  {
+
+    }
+
+    class "Aisle end" as aisleEnd <<value object>>  {
+
+    }
+
+    class "Aisle depth" as aisleDepth <<value object>>  {
+
+    }
+
+    class "Aisle accessibility" as aisleAccessibility <<value object>>  {
+
+    }
+
+    class "Aisle Square" as aisleSquare <<entity>>{
+
+    }
+
+    class "Aisle Length square" as aisleLSquare <<value object>>  {
+
+    }
+
+    class "Aisle Width square" as aisleWSquare <<value object>>  {
+
+    }
+
+    class "Row" as row <<entity>>{
+        int rowID
+    }
+
+    class "Row begin" as rowBegin <<value object>>  {
+
+    }
+
+    class "Row end" as rowEnd <<value object>>  {
+
+    }
+
+    class "Shelf" as shelf <<entity>>{
+        int shelfID
+    }
+
+    class "Bin" as bin <<entity>>{
+        int binID
+    }
+
+    class "AGVDocks" as agvDocks <<aggregate root>> <<entity>>{
+        int agvDocksID
+    }
+
+    class "AGV Docks begin" as agvDocksBegin <<entity>>{
+
+    }
+
+    class "AGV Docks end" as agvDocksEnd <<entity>>{
+
+    }
+
+    class "AGV Docks depth" as agvDocksDepth <<entity>>{
+
+    }
+
+    class "AGV Docks accessibility" as agvDocksAccessibility <<entity>>{
+
+    }
+}
+
+package "AGV" <<aggregate>> {
+
+    class "AGV" as agv <<aggregate root>> <<entity>>{
+        int agvID
+    }
+
+    class "AGV Location" as agvLocation <<entity>>{
+
+    }
+
+    class "Status" as status <<entity>>{
+
+    }
+
+    class "Detected Obstacles" as detectedObstacles <<entity>>{
+
+    }
+
+    class "Battery Status" as batteryStatus <<entity>>{
+
+    }
+
+    class "Battery Consumption" as batteryConsumption <<entity>>{
+
+    }
+
+    class "Battery Recharge" as batteryRecharge <<entity>>{
+
+    }
+
+    class "Speed" as speed <<entity>>{
+
+    }
+
+    class "Direction" as direction <<entity>>{
+
+    }
+
+    class "Last Position" as lastPosition <<entity>>{
+
+    }
+
+    class "Current Route" as currentRoute <<entity>>{
+
+    }
+
+    class "Travelled Distance" as travelledDistance <<entity>>{
+
+    }
+}
+
+
+package "Questionnaire" <<aggregate>> {
+    class "Questionnaire" as questionnaire <<aggregate root>> <<entity>>{
+
+    }
+
+    class "Questionnaire ID" as questionnaireID <<value object>>  {
+
+    }
+
+    class "Questionnaire Title" as questionnairetitle <<value object>>  {
+
+    }
+
+    class "Questionnaire Type" as questionnaireType <<value object>>  {
+
+    }
+
+    class "Questionnaire Type Condition" as questionnaireTypeCondition <<value object>>  {
+
+    }
+
+    class "Welcome Message" as welcomeMessage <<value object>>  {
+
+    }
+
+    class "Final Message" as finalMessage <<value object>>  {
+
+    }
+
+    class "Number Of Days It Will Be Performed" as numberOfDaysItWillBePerformed <<value object>>  {
+
+    }
+
+    class "List Of Sections" as listOfSections <<value object>>  {
+
+    }
+
+    class "Section" as section <<entity>>{
+
+    }
+
+    class "Section Id" as sectionId <<value object>>  {
+
+    }
+
+    class "Section Title" as sectionTitle <<value object>>  {
+
+    }
+
+    class "Section Description" as sectionDescription <<value object>>  {
+
+    }
+
+    class "Section Obligatorily" as sectionObligatorily <<value object>>  {
+
+    }
+
+    class "Section Condition" as sectionCondition <<value object>>  {
+
+    }
+
+    class "Section Repeatability" as sectionRepeatability <<value object>>  {
+
+    }
+
+    class "Content" as content <<value object>>  {
+
+    }
+
+    class "Question" as question <<entity>>{
+
+    }
+
+    class "Question ID" as questionID <<value object>>  {
+
+    }
+
+    class "Question Text" as questionText <<value object>>  {
+
+    }
+
+    class "Question Instruction" as questionInstruction <<value object>>  {
+
+    }
+
+    class "Question Type" as questionType <<value object>>  {
+
+    }
+
+    class "Question Obligatorily" as questionObligatorily <<value object>>  {
+
+    }
+
+    class "Question Condition" as questionCondition <<value object>>  {
+
+    }
+
+    class "List of Options" as listOfOptions <<value object>>  {
+
+    }
+}
+
+package "System User" <<aggregate>> {
+    abstract class  "SystemUser" as sys_user <<aggregate root>> <<entity>>{
+
+    }
+
+    class "Email" as email <<value object>>  {
+
+    }
+
+    class "Password" as password <<value object>>{
+
+    }
+}
+
+package "Answer" <<aggregate>> {
+
+    class "Answer" as answer <<aggregate root>> <<entity>>{
+
+    }
+
+    class "Answer_Id" as answer_Id <<value object>>  {
+
+    }
+
+    class "Answer_Status" as answer_Status <<value object>>  {
+
+    }
+
+}
+
+"Product Order" -left[hidden] "Product"
+"Product" -down[hidden]---> "Product Category"
+
+"System User" -down[hidden]-> "Questionnaire"
+
+sys_user -> "1" email
+sys_user -> "1" password
+
+product "*" -> "1" productCategory
+product -u-> "1" photos
+product -u-> "1" productShortDescription
+product -d-> "1" productExtendedDescription
+product -d-> "1" productTechnicalDescription
+product -l-> "1" barcode
+product -r-> "1" productionCode
+
+productOrder "1" -> "1...*" product
+productOrder -u-> "1" orderID
+productOrder -u-> "1" datetime
+productOrder -d-> "1" shipmentMethod
+productOrder -d-> "1" paymentMethod
+productOrder -l-> "1" status
+
+shoppingCart "1" -> "1...*" product
+
+customer -> "1" shoppingCart
+customer -u-> "1" customerID
+customer -u-> "1" vat
+customer -u-> "1" emailAddress
+customer -d-> "1" phoneNumber
+customer -d-> "1" birthdate
+customer -d-> "1" gender
+customer -l-> "1" billingAddresses
+customer -> "1" deliveringAddresses
+
+warehouse "1" ---> "*" aisle
+warehouse "1" -> "*" agvDocks
+warehouse -u-> "1" warehouseLength
+warehouse -l-> "1" warehouseSquare
+warehouse -d-> "1" warehouseWidth
+warehouse -r-> "1" unit
+
+aisle "1" --> "*" row
+aisle -u-> "1" aisleAccessibility
+aisle -u-> "1" aisleBegin
+aisle -d-> "1" aisleDepth
+aisle -d-> "1" aisleEnd
+aisle -l-> "1" aisleLSquare
+aisle -d-> "1" aisleWSquare
+aisle -r-> "1" aisleSquare
+
+row "1" -> "*" shelf
+row -d-> "1" rowBegin
+row -d-> "1" rowEnd
+
+shelf "1" --> "*" bin
+
+bin "1" ---> "1...*" product
+
+questionnaire "1" --> "1...*" section
+questionnaire -u-> "1" questionnaireID
+questionnaire -u-> "1" questionnairetitle
+questionnaire -u-> "1" questionnaireType
+questionnaire -u-> "1" questionnaireTypeCondition
+questionnaire -u-> "1" welcomeMessage
+questionnaire -> "1" finalMessage
+questionnaire -> "1" numberOfDaysItWillBePerformed
+questionnaire -l-> "1" listOfSections
+
+section "1" ---> "1...*" question
+section -r-> "1" sectionId
+section -r-> "1" sectionTitle
+section -r-> "1" sectionDescription
+section -d-> "1" sectionObligatorily
+section -d-> "1" sectionCondition
+section -d-> "1" sectionRepeatability
+section -> "1" content
+
+question -d-> "1" questionID
+question -d-> "1" questionText
+question -d-> "1" questionInstruction
+question -d-> "1" questionType
+question -d-> "1" questionObligatorily
+question -d-> "1" questionCondition
+question -> "1" listOfOptions
+
+agvDocks "1" -> "*" agv
+agvDocks -u-> "1" agvDocksAccessibility
+agvDocks -d-> "1" agvDocksBegin
+agvDocks -l-> "1" agvDocksDepth
+agvDocks -d-> "1" agvDocksEnd
+
+agv -u-> "1" agvLocation
+agv -u-> "1" detectedObstacles
+agv -u-> "1" batteryConsumption
+agv -u-> "1" batteryRecharge
+agv -d-> "1" batteryStatus
+agv -d-> "1" speed
+agv -d-> "1" direction
+agv -r-> "1" lastPosition
+agv -d-> "1" currentRoute
+agv -l-> "1" travelledDistance
+
+sys_user -> questionnaire
+sys_user -> warehouse
+sys_user ---> product
+
+answer "1" --> "1...*" questionnaire
+answer "1" --> "1...*" section
+answer "1" --> "1...*" question
+answer "1" --> "1...*" customer
+answer -u-> "1" answer_Status
+answer -u-> "1" answer_Id
+
+@enduml

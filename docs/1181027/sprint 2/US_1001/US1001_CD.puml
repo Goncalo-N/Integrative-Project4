@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class RegisterProductUI {
++doShow()
+}
+
+class ProductController {
++registerNewProduct(internal code, production code, etc...)
+}
+
+class ProductRepository {
++save(newProduct) :
+}
+
+class Product {
++Product(internal code, production code, etc...)
+}
+
+RegisterProductUI ..> ProductController
+ProductController ..> ProductRepository
+ProductController ..> Product
+@enduml

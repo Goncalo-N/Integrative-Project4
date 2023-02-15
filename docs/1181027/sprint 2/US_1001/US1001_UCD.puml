@@ -1,0 +1,6 @@
+@startuml
+left to right direction
+
+:Sales Clerk : --> (UC 1001)
+"UC 1001 - Specify a new product." as (UC 1001)
+@enduml

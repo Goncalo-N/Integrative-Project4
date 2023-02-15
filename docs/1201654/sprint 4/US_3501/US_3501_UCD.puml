@@ -1,0 +1,6 @@
+@startuml
+left to right direction
+
+:Customer : --> (UC 3501)
+"UC 3501 - Answer a questionnaire." as (UC 3501)
+@enduml

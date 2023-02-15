@@ -1,0 +1,6 @@
+@startuml
+left to right direction
+
+:Sales Clerk : --> (UC 1004)
+"UC 1004 - Create a new products order on behalf of a given customer." as (UC 1004)
+@enduml

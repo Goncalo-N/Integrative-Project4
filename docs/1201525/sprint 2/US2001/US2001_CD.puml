@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class UploadWarehouseFileUI {
++doShow()
+}
+
+class WarehouseController {
++registerNewWarehouse(length, width etc...)
+}
+
+class WarehouseRepository {
++save(newWarehouse) :
+}
+
+class Warehouse {
++Warehouse(length, width, etc...)
+}
+
+UploadWarehouseFileUI ..> WarehouseController
+WarehouseController ..> WarehouseRepository
+WarehouseController ..> Warehouse
+@enduml

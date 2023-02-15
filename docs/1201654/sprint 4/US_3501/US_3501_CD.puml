@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class AnswerQuestionnaireUI {
++doShow()
+}
+
+class CreateAnswerController {
++createNewAnswer(id, etc...)
+}
+
+class AnswerRepository {
++save(newAnswer) :
+}
+
+class Answer {
++Answer(id, etc...)
+}
+
+AnswerQuestionnaireUI ..> CreateAnswerController
+CreateAnswerController ..> AnswerRepository
+CreateAnswerController ..> Answer
+@enduml

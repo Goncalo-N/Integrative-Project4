@@ -1,0 +1,61 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+actor SalesClerk
+participant System
+activate System
+
+SalesClerk -> System: asks to create a new product order
+activate System
+
+
+System --> SalesClerk: asks if wants to type or select the Customer ID
+deactivate System
+
+SalesClerk -> System: types the data
+activate System
+
+
+System --> SalesClerk: asks to type/select the Customer ID
+deactivate System
+
+SalesClerk -> System: types/selects the Customer ID
+activate System
+
+loop
+System --> SalesClerk: asks if wants to type or select the Product ID
+deactivate System
+
+SalesClerk -> System: types the requested data
+activate System
+
+
+System --> SalesClerk: asks to type/select the Product ID
+deactivate System
+
+SalesClerk -> System: types/selects the Product ID
+activate System
+
+
+System --> SalesClerk: asks to type the Products´s quantity
+deactivate System
+
+SalesClerk -> System: types the Products´s quantity
+activate System
+end
+
+
+System --> SalesClerk: asks to select the shipment method
+deactivate System
+
+SalesClerk -> System: selects the shipment method
+activate System
+
+
+System --> SalesClerk: asks to select the payment method
+deactivate System
+
+SalesClerk -> System: selects the payment method
+activate System
+@enduml
